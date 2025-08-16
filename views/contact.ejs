@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Rapid Rescuers</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index"><img src="https://i.postimg.cc/cH9nFfM7/combo.png" alt="Rapid Rescuers Logo" class="logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="contact" class="active">Contact Us</a></li>
+                    <li><a href="services">Services</a></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+
+    <main>
+        <div class="hero" style="background-image: url('https://i.postimg.cc/85Mhz7hL/sparksfly.jpg');">
+            <div class="content">
+                <h1 class="slogan">CONTACT OUR TEAM</h1>
+                <h2 style="color: #ff9000;">Get in Touch with Rapid Rescuers</h2>
+                <p>Have questions about our services or want to join our team? Reach out to us using the information below or fill out the contact form.</p>
+                
+                <div class="contact-info">
+                    <h2 style="color: #ff9000;">Contact Information</h2>
+                    <p><strong>Email:</strong> rapidrescuers@gmail.com</p>
+                    <p><strong>Phone:</strong> +639000000000</p>
+                    <p><strong>Address:</strong> 123 Rescue Street, Emergency City, PH 1000</p>
+                    
+                    <h2 style="color: #ff9000;">Emergency Hotline</h2>
+                    <p class="emergency">For immediate assistance, call our 24/7 emergency line: <strong>911</strong></p>
+                </div>
+                
+                <div class="contact-form">
+                    <h2 style="color: #ff9000;">Send Us a Message</h2>
+                    <form action="/submit-contact" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="recruitment">Recruitment</option>
+                                <option value="services">Services Information</option>
+                                <option value="feedback">Feedback/Suggestions</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="team-hours">
+                    <h2 style="color: #ff9000;">Our Team Availability</h2>
+                    <p><strong>Administrative Office Hours:</strong> Monday-Friday, 8:00 AM - 5:00 PM</p>
+                    <p><strong>Emergency Services:</strong> 24/7</p>
+                </div>
+            </div>
+            
+            <div class="photo">
+                <img src="https://i.imghippo.com/files/Etvw4371uWU.png" alt="Rapid Rescuers Team">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="contact"><b>Contact Us: rapidrescuers@gmail.com | Phone: +639000000000</b></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="https://i.postimg.cc/7Z8n9Bcw/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="https://i.postimg.cc/SsvWMVC0/instagram.png" alt="Instagram"></a>
+                <a href="https://www.x.com" target="_blank"><img src="https://i.postimg.cc/W1vfzbsG/x.png" alt="X"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
